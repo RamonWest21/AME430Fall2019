@@ -22,6 +22,8 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func boom(_ sender: NSButton) {
+    }
 
 }
 
