@@ -9,7 +9,8 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet var label: NSTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +23,9 @@ class ViewController: NSViewController {
         }
     }
 
-    @IBAction func boom(_ sender: NSButton) {
+    @IBAction func buttonActionMethod(_ sender: NSButton) {
+        label.stringValue = "boom"
+        
     }
 
 }
