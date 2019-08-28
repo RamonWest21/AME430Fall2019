@@ -24,9 +24,13 @@ class ViewController: NSViewController {
     }
 
     @IBAction func buttonActionMethod(_ sender: NSButton) {
-        label.stringValue = "boom"
+        label.stringValue = "Hello"
         
     }
-
+    
+    @IBAction func clearButton(_ sender: Any) {
+        label.stringValue = ""
+    }
+    
 }
 
