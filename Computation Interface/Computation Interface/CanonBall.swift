@@ -34,5 +34,16 @@ class CanonBall {
     }
    
     
-    
+    func format(value: Double) -> String{
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        let number = NSNumber(value: value)
+        if let str = formatter.string(from: number){
+            return str
+        }
+        else{
+            return "not a number"
+        }
+    }
 }
