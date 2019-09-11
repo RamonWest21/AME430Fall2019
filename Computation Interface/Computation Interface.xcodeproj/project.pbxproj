@@ -11,7 +11,8 @@
 		3FA3C8CC23218167000BC548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3C8CB23218167000BC548 /* ViewController.swift */; };
 		3FA3C8CE23218167000BC548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3C8CD23218167000BC548 /* Assets.xcassets */; };
 		3FA3C8D123218167000BC548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3C8CF23218167000BC548 /* Main.storyboard */; };
-		3FA3C8DA232181F5000BC548 /* CanonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3C8D9232181F5000BC548 /* CanonBall.swift */; };
+		3FED7F40232986D700AAE264 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED7F3F232986D700AAE264 /* Particle.swift */; };
+		3FED7F4223298A6300AAE264 /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED7F4123298A6300AAE264 /* DistanceCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		3FA3C8D023218167000BC548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FA3C8D223218167000BC548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA3C8D323218167000BC548 /* Computation_Interface.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Computation_Interface.entitlements; sourceTree = "<group>"; };
-		3FA3C8D9232181F5000BC548 /* CanonBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanonBall.swift; sourceTree = "<group>"; };
+		3FED7F3F232986D700AAE264 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		3FED7F4123298A6300AAE264 /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			children = (
 				3FA3C8C923218167000BC548 /* AppDelegate.swift */,
 				3FA3C8CB23218167000BC548 /* ViewController.swift */,
-				3FA3C8D9232181F5000BC548 /* CanonBall.swift */,
 				3FA3C8CD23218167000BC548 /* Assets.xcassets */,
 				3FA3C8CF23218167000BC548 /* Main.storyboard */,
+				3FED7F3F232986D700AAE264 /* Particle.swift */,
+				3FED7F4123298A6300AAE264 /* DistanceCalculator.swift */,
 				3FA3C8D223218167000BC548 /* Info.plist */,
 				3FA3C8D323218167000BC548 /* Computation_Interface.entitlements */,
 			);
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA3C8DA232181F5000BC548 /* CanonBall.swift in Sources */,
+				3FED7F4223298A6300AAE264 /* DistanceCalculator.swift in Sources */,
+				3FED7F40232986D700AAE264 /* Particle.swift in Sources */,
 				3FA3C8CC23218167000BC548 /* ViewController.swift in Sources */,
 				3FA3C8CA23218167000BC548 /* AppDelegate.swift in Sources */,
 			);

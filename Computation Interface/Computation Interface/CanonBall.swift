@@ -20,20 +20,9 @@ class CanonBall {
         angle = 0
     }
     
-    func calculateDistanceTraveled(){
-       
-            var distance = force * cos(angle)
-    }
     
-    func calculateTimeTraveled() {
-        // var time =
-        
-        // distY = ft - mgt
-        // distanceY = force*sin(angle)*time - mass*g*time
-        // time = ((force * sine(angle)) - (mass * gravity)) / distanceY
-    }
    
-    
+    // format strings for text fields
     func format(value: Double) -> String{
         let formatter = NumberFormatter()
         formatter.maximumFractionDigits = 2
