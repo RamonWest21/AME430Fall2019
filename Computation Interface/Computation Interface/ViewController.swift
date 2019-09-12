@@ -27,6 +27,8 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         particle1 = Particle()
+        updateFields()
+        updateSliders()
    
     }
     
