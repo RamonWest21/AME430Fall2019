@@ -9,6 +9,8 @@
 import Cocoa
 import AVKit
 
+var url: URL!
+
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
@@ -23,6 +25,11 @@ class ViewController: NSViewController {
         }
     }
 
-
+    func openMovie(){
+        let asset = AVURLAsset(url: url)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVPlayer(playerItem: item)
+        
+    }
 }
 
