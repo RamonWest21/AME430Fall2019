@@ -90,13 +90,13 @@ class SourceViewController: NSViewController, NSTableViewDataSource, NSTableView
     // NSTableViewDataSource
     func tableViewSelectionDidChange(_ notification: Notification) {
         print("T")
-        let url = mediaURLs[tableView.selectedRow]
+        let urls = mediaURLs[tableView.selectedRow]
         print("the selected url is \(url.lastPathComponent)")
         
         guard let splitVC = parent as? NSSplitViewController else {return}
         
        if let playerVC = splitVC.children[1] as? ViewController {
-            playerVC.openMovie(url: urls)
+        playerVC.openMovie(url: urls)
        }
     }
 }

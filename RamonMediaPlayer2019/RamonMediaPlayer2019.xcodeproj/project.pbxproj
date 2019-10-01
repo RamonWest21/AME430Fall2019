@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6491A72343C8A9001C42D5 /* Timecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6491A62343C8A9001C42D5 /* Timecode.swift */; };
 		3FCCC42B233A93FE00027DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCC42A233A93FE00027DF9 /* AppDelegate.swift */; };
 		3FCCC42D233A93FE00027DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCCC42C233A93FE00027DF9 /* ViewController.swift */; };
 		3FCCC42F233A93FF00027DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCCC42E233A93FF00027DF9 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F6491A62343C8A9001C42D5 /* Timecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timecode.swift; sourceTree = "<group>"; };
 		3FCCC427233A93FE00027DF9 /* RamonMediaPlayer2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamonMediaPlayer2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCCC42A233A93FE00027DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCCC42C233A93FE00027DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				3FCCC42A233A93FE00027DF9 /* AppDelegate.swift */,
 				3FCCC42C233A93FE00027DF9 /* ViewController.swift */,
 				3FCCC43A233A97DF00027DF9 /* SourceViewController.swift */,
+				3F6491A62343C8A9001C42D5 /* Timecode.swift */,
 				3FCCC42E233A93FF00027DF9 /* Assets.xcassets */,
 				3FCCC430233A93FF00027DF9 /* Main.storyboard */,
 				3FCCC433233A93FF00027DF9 /* Info.plist */,
@@ -98,6 +101,11 @@
 				TargetAttributes = {
 					3FCCC426233A93FE00027DF9 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +147,7 @@
 				3FCCC42D233A93FE00027DF9 /* ViewController.swift in Sources */,
 				3FCCC42B233A93FE00027DF9 /* AppDelegate.swift in Sources */,
 				3FCCC43B233A97DF00027DF9 /* SourceViewController.swift in Sources */,
+				3F6491A72343C8A9001C42D5 /* Timecode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +284,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RamonMediaPlayer2019/RamonMediaPlayer2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RamonMediaPlayer2019/Info.plist;
@@ -293,7 +301,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RamonMediaPlayer2019/RamonMediaPlayer2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RamonMediaPlayer2019/Info.plist;
