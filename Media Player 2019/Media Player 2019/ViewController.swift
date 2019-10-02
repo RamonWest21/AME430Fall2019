@@ -28,6 +28,7 @@ class ViewController: NSViewController {
     }
     
     // change the window title
+    //  accessed from https://stackoverflow.com/questions/24235815/cocoa-how-to-set-window-title-from-within-view-controller-in-swift
     override func viewDidAppear() {
         super.viewDidAppear()
         self.view.window?.title = videoTitle
@@ -130,8 +131,7 @@ class ViewController: NSViewController {
         return currentTimeString
     }
     
-    @IBAction func time(_ sender: Any) {
-    }
+   
     
 }
 
