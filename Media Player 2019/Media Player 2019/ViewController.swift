@@ -16,17 +16,26 @@ class ViewController: NSViewController {
     @IBOutlet weak var playerView: AVPlayerView!
     
     
-    var isPlaying = 1
+    var isPlaying = false
     var movieIsOpen = false
+    var timecode = ""
+    var videoTitle = "No Video Selected"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    // change the window title
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        self.view.window?.title = videoTitle
+    }
 
     override var acceptsFirstResponder: Bool { return true }
     
+    // acccess the file->open 
     @IBAction func openDocument(_ sender: NSMenuItem) {
         let openPanel = NSOpenPanel()
         openPanel.canChooseFiles = true
@@ -36,6 +45,8 @@ class ViewController: NSViewController {
             print("User hit OK")
             if let url = openPanel.url {
                 print("url path is \(url.path)")
+                videoTitle = "\(url.lastPathComponent)"
+                viewDidAppear()
                 openMovie(url: url)
                 movieIsOpen = true
             }
@@ -44,7 +55,8 @@ class ViewController: NSViewController {
             print("cancel")
         }
     }
-
+    
+    // instantiate player object
     func openMovie(url: URL){
         let asset = AVURLAsset(url: url)
         let item = AVPlayerItem(asset: asset)
@@ -52,6 +64,74 @@ class ViewController: NSViewController {
         
         playerView.player = player
     }
+    
+    // alternates between play and pause states
+    @IBAction func playPause(_ sender: NSButton) {
+        if isPlaying == false{
+            playerView.player?.play()
+            isPlaying = true
+        }
+        
+        else if isPlaying == true{
+            playerView.player?.pause()
+            isPlaying = false
+        }
+        displayTime()
+    }
+    
+    // stops video, sets isPlaying to false, starts from begining
+    @IBAction func stop(_ sender: NSButton) {
+        guard let player = playerView.player else{ return}
+        let startTime = CMTime(seconds: 0.0, preferredTimescale: 600)
+        playerView.player?.pause()
+        player.seek(to: startTime, toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+        displayTime()
+        isPlaying = false 
+    }
+    
+    // skips forward 30 seconds
+    @IBAction func fastForward(_ sender: NSButton) {
+        guard let player = playerView.player, let item = player.currentItem else {
+            return
+        }
+        
+        let currentTime = item.currentTime()
+        let newTime = currentTime + CMTime(seconds: 30.0, preferredTimescale: 600)
+        
+        player.seek(to: newTime)
+    }
+    
+    // skips backwards 30 seconds
+    @IBAction func rewind(_ sender: NSButton) {
+        guard let player = playerView.player, let item = player.currentItem else {
+            return
+        }
+        
+        let currentTime = item.currentTime()
+        let newTime = currentTime - CMTime(seconds: 30.0, preferredTimescale: 600)
+        
+        player.seek(to: newTime)
+    }
+    
 
+    func displayTime() -> String {
+        guard let player = playerView.player, let item = player.currentItem else {
+            return " "
+        }
+        
+        let currentTimeDouble = item.currentTime().value // converts current time to Double
+        let currentTimeString = String(currentTimeDouble)
+        
+        // forever while loop is bad
+//        while isPlaying == true{
+//            print(currentTimeString)
+//        }
+        let timeLabel = playerView.accessibilityLabel()
+        return currentTimeString
+    }
+    
+    @IBAction func time(_ sender: Any) {
+    }
+    
 }
 
