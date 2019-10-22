@@ -11,7 +11,12 @@ import Cocoa
 class ViewController: NSViewController {
     
     @IBOutlet var nameLabel: NSTextField!
-
+    @IBOutlet weak var heightLabel: NSTextField!
+    @IBOutlet weak var birthYearLabel: NSTextField!
+    @IBOutlet weak var genderLabel: NSTextField!
+    
+    @IBOutlet weak var imageView: NSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,63 +38,75 @@ class ViewController: NSViewController {
             else { return }
         
         let task = session.dataTask(with: url, completionHandler: { data, response, error in
-            if let error = error as NSError? {
-                // There was an error. Report it to the user, and done.
-                print("***** Error *****")
-                print(error)
-                self.reportError(error: error)
-                return
-            }
-            guard let httpResponse = response as? HTTPURLResponse else {
-                // Something has gone terribly wrong, there was no HTTP response.
-                print("unknown response")
-                return
-            }
-            guard (200...299).contains(httpResponse.statusCode) else {
-                // The HTTP status code is an error. Report it to the user, and done.
-                print("http response code \(httpResponse.statusCode)")
-                self.reportStatus(code: httpResponse.statusCode)
-                return
-            }
+                if let error = error as NSError? {
+                    // There was an error. Report it to the user, and done.
+                    print("***** Error *****")
+                    print(error)
+                    self.reportError(error: error)
+                    return
+                }
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    // Something has gone terribly wrong, there was no HTTP response.
+                    print("unknown response")
+                    return
+                }
+                guard (200...299).contains(httpResponse.statusCode) else {
+                    // The HTTP status code is an error. Report it to the user, and done.
+                    print("http response code \(httpResponse.statusCode)")
+                    self.reportStatus(code: httpResponse.statusCode)
+                    return
+                }
             
-            print("***** Here is the HttpResponse: ******")
-            print(httpResponse)
+                print("***** Here is the HttpResponse: ******")
+                print(httpResponse)
             
-            // Unwrap the data object.
-            guard let data = data else { return }
+                // Unwrap the data object.
+                guard let data = data else { return }
             
-            if let string = String(data: data, encoding: .utf8) {
-                print("***** Here is the data as a string *****")
-                print(string)
-            }
+                if let string = String(data: data, encoding: .utf8) {
+                    print("***** Here is the data as a string *****")
+                    print(string)
+                }
             
-//            // Decode the JSON response.
-//            let decoder = JSONDecoder()
-//            guard let person = try? decoder.decode(people.self, from: data) else { return }
+                // Decode the JSON response.
             
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
+                // v1
+                //let decoder = JSONDecoder()
+                //guard let person = try? decoder.decode(people.self, from: data) else { return }
             
-            var person: people!
-            do {
-                person = try decoder.decode(people.self, from: data)
-            }
-            catch {
-                print(error)
-                return
-            }
+                // v2
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+    
+                var person: people!
+                do {
+                    person = try decoder.decode(people.self, from: data)
+                }
+                catch {
+                    print(error)
+                    return
+                }
             
-            print("***** Decoded String *****")
-            print(person.name)
+                print("***** Decoded String *****")
+                print("Name: " + person.name)
+                print("Height: " + person.height)
+                print("Birth Year: " + person.birthYear)
+                print("Gender: " + person.gender)
             
-            DispatchQueue.main.async {
-                // Update the UI on the main thread.
-                self.nameLabel.stringValue = person.name
-            }
             
+               // loadHomeworld(person.homeworld)
+            
+                DispatchQueue.main.async {
+                    // Update the UI on the main thread.
+                    self.nameLabel.stringValue = person.name
+                    self.heightLabel.stringValue = person.height
+                    self.birthYearLabel.stringValue = person.birthYear
+                    self.genderLabel.stringValue = person.gender
+                    //self.iconImage.image = NSImage(named: person.name)
+                }
         })
-        task.resume()
         
+        task.resume()
     } // end of loadData function
     
     // Reload to get another quote.
@@ -115,6 +132,7 @@ class ViewController: NSViewController {
         DispatchQueue.main.async {
             let alert = NSAlert(error: error)
             alert.runModal()
+            
         }
     }
     
