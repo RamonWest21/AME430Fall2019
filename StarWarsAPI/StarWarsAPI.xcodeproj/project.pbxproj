@@ -12,6 +12,94 @@
 		3F8951CE235F772800DA6CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8951CD235F772800DA6CA0 /* Assets.xcassets */; };
 		3F8951D1235F772800DA6CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8951CF235F772800DA6CA0 /* Main.storyboard */; };
 		3F8951DA235F77F300DA6CA0 /* people.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8951D9235F77F300DA6CA0 /* people.swift */; };
+		3F916E472360E14700856B96 /* Luke Skywalker.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E462360E14700856B96 /* Luke Skywalker.jpeg */; };
+		3F916E492360E19D00856B96 /* C-3PO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E482360E19D00856B96 /* C-3PO.jpeg */; };
+		3F916E4B2360E1DB00856B96 /* R2-D2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E4A2360E1DB00856B96 /* R2-D2.jpeg */; };
+		3F916E4D2360E20600856B96 /* Darth Vader.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E4C2360E20600856B96 /* Darth Vader.jpeg */; };
+		3F916E4F2360E22800856B96 /* Leia Organa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E4E2360E22800856B96 /* Leia Organa.jpeg */; };
+		3F916E512360E25B00856B96 /* Owen Lars.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E502360E25B00856B96 /* Owen Lars.jpeg */; };
+		3F916E532360E2BF00856B96 /* Beru Whitesun lars.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E522360E2BF00856B96 /* Beru Whitesun lars.jpeg */; };
+		3F916E552360E2ED00856B96 /* R5-D4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E542360E2EC00856B96 /* R5-D4.jpeg */; };
+		3F916E572360E30A00856B96 /* Biggs Darklighter.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E562360E30A00856B96 /* Biggs Darklighter.jpeg */; };
+		3F916E592360E33300856B96 /* Obi-Wan Kenobi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E582360E33300856B96 /* Obi-Wan Kenobi.jpeg */; };
+		3F916E5B2360E42400856B96 /* Anakin Skywalker.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E5A2360E42300856B96 /* Anakin Skywalker.jpeg */; };
+		3F916E5D2360E44700856B96 /* Wilhuff Tarkin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E5C2360E44700856B96 /* Wilhuff Tarkin.jpeg */; };
+		3F916E5F2360E47600856B96 /* Chewbacca.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E5E2360E47600856B96 /* Chewbacca.jpeg */; };
+		3F916E612360E4A100856B96 /* Han Solo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E602360E4A100856B96 /* Han Solo.jpeg */; };
+		3F916E632360E4C500856B96 /* Greedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E622360E4C500856B96 /* Greedo.jpeg */; };
+		3F916E652360E4EC00856B96 /* Jabba Desilijic Tiure.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E642360E4EC00856B96 /* Jabba Desilijic Tiure.jpeg */; };
+		3F916E672360E53B00856B96 /* Wedge Antilles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E662360E53A00856B96 /* Wedge Antilles.jpeg */; };
+		3F916E692360E55D00856B96 /* Jek Tono Porkins.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E682360E55D00856B96 /* Jek Tono Porkins.jpeg */; };
+		3F916E6B2360E58E00856B96 /* Yoda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E6A2360E58E00856B96 /* Yoda.jpeg */; };
+		3F916E6D2360E5AF00856B96 /* Palpatine.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E6C2360E5AF00856B96 /* Palpatine.jpeg */; };
+		3F916E6F2360E5DD00856B96 /* Boba Fett.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E6E2360E5DD00856B96 /* Boba Fett.jpeg */; };
+		3F916E712360E60D00856B96 /* IG-88.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E702360E60D00856B96 /* IG-88.jpeg */; };
+		3F916E732360E63300856B96 /* Bossk.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E722360E63200856B96 /* Bossk.jpeg */; };
+		3F916E752360E65600856B96 /* Lando Calrissian.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E742360E65600856B96 /* Lando Calrissian.jpeg */; };
+		3F916E772360E66E00856B96 /* Lobot.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E762360E66E00856B96 /* Lobot.jpeg */; };
+		3F916E792360E68A00856B96 /* Ackbar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E782360E68A00856B96 /* Ackbar.jpeg */; };
+		3F916E7B2360E6A400856B96 /* Mon Mothma.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E7A2360E6A400856B96 /* Mon Mothma.jpeg */; };
+		3F916E7D2360E6C000856B96 /* Arvel Crynyd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E7C2360E6C000856B96 /* Arvel Crynyd.jpeg */; };
+		3F916E7F2360E6F400856B96 /* Wicket Systri Warrick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E7E2360E6F400856B96 /* Wicket Systri Warrick.jpeg */; };
+		3F916E812360E72C00856B96 /* Nien Nunb.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E802360E72C00856B96 /* Nien Nunb.jpeg */; };
+		3F916E832360E74700856B96 /* Qui-Gon Jinn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E822360E74700856B96 /* Qui-Gon Jinn.jpeg */; };
+		3F916E852360E76600856B96 /* Nute Gunray.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E842360E76600856B96 /* Nute Gunray.jpeg */; };
+		3F916E872360E78000856B96 /* Finis Valorum.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E862360E78000856B96 /* Finis Valorum.jpeg */; };
+		3F916E892360E7A300856B96 /* Padmé Amidala.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E882360E7A200856B96 /* Padmé Amidala.jpeg */; };
+		3F916E8B2360E7BE00856B96 /* Jar Jar Binks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E8A2360E7BE00856B96 /* Jar Jar Binks.jpeg */; };
+		3F916E8D2360E7DF00856B96 /* Roos Tarpals.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E8C2360E7DF00856B96 /* Roos Tarpals.jpeg */; };
+		3F916E8F2360E80000856B96 /* Rugor Nass.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E8E2360E80000856B96 /* Rugor Nass.jpeg */; };
+		3F916E912360E81D00856B96 /* Ric Olié.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E902360E81D00856B96 /* Ric Olié.jpeg */; };
+		3F916E932360E83500856B96 /* Watto.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E922360E83500856B96 /* Watto.jpeg */; };
+		3F916E952360E84C00856B96 /* Sebulba.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E942360E84B00856B96 /* Sebulba.jpeg */; };
+		3F916E972360E86B00856B96 /* Quarsh Panaka.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E962360E86B00856B96 /* Quarsh Panaka.jpeg */; };
+		3F916E992360E88800856B96 /* Shmi Skywalker.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E982360E88800856B96 /* Shmi Skywalker.jpeg */; };
+		3F916E9B2360E8A400856B96 /* Darth Maul.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E9A2360E8A300856B96 /* Darth Maul.jpeg */; };
+		3F916E9D2360E8C000856B96 /* Bib Fortuna.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E9C2360E8C000856B96 /* Bib Fortuna.jpeg */; };
+		3F916E9F2360E90900856B96 /* Ayla Secura.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916E9E2360E90900856B96 /* Ayla Secura.jpeg */; };
+		3F916EA12360E92900856B96 /* Ratts Tyerell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EA02360E92900856B96 /* Ratts Tyerell.jpeg */; };
+		3F916EA32360E93F00856B96 /* Dud Bolt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EA22360E93F00856B96 /* Dud Bolt.jpeg */; };
+		3F916EA52360E95300856B96 /* Gasgano.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EA42360E95300856B96 /* Gasgano.jpeg */; };
+		3F916EA72360E96A00856B96 /* Ben Quadinaros.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EA62360E96A00856B96 /* Ben Quadinaros.jpeg */; };
+		3F916EA92360E98400856B96 /* Mace Windu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EA82360E98400856B96 /* Mace Windu.jpeg */; };
+		3F916EAB2360E99C00856B96 /* Ki-Adi-Mundi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EAA2360E99C00856B96 /* Ki-Adi-Mundi.jpeg */; };
+		3F916EAD2360E9C300856B96 /* Kit Fisto.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EAC2360E9C300856B96 /* Kit Fisto.jpeg */; };
+		3F916EAF2360E9E100856B96 /* Eeth Koth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EAE2360E9E100856B96 /* Eeth Koth.jpeg */; };
+		3F916EB12360E9FD00856B96 /* Adi Gallia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EB02360E9FD00856B96 /* Adi Gallia.jpeg */; };
+		3F916EB32360EA1800856B96 /* Saesee Tiin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EB22360EA1800856B96 /* Saesee Tiin.jpeg */; };
+		3F916EB52360EA4E00856B96 /* Yarael Poof.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EB42360EA4E00856B96 /* Yarael Poof.jpeg */; };
+		3F916EB72360EA7000856B96 /* Plo Koon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EB62360EA7000856B96 /* Plo Koon.jpeg */; };
+		3F916EB92360EA9400856B96 /* Mas Amedda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EB82360EA9400856B96 /* Mas Amedda.jpeg */; };
+		3F916EBB2360EAB800856B96 /* Gregar Typho.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EBA2360EAB800856B96 /* Gregar Typho.jpeg */; };
+		3F916EBF2360EAEE00856B96 /* Cliegg Lars.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EBE2360EAEE00856B96 /* Cliegg Lars.jpeg */; };
+		3F916EC12360EB0800856B96 /* Poggle the Lesser.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EC02360EB0800856B96 /* Poggle the Lesser.jpeg */; };
+		3F916EC32360EB2300856B96 /* Luminara Unduli.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EC22360EB2300856B96 /* Luminara Unduli.jpeg */; };
+		3F916EC52360EB3A00856B96 /* Barriss Offee.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EC42360EB3A00856B96 /* Barriss Offee.jpeg */; };
+		3F916EC72360EB5A00856B96 /* Dormé.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EC62360EB5A00856B96 /* Dormé.jpeg */; };
+		3F916EC92360EB9000856B96 /* Dooku.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EC82360EB9000856B96 /* Dooku.jpeg */; };
+		3F916ECB2360EBBD00856B96 /* Bail Prestor Organa.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ECA2360EBBD00856B96 /* Bail Prestor Organa.jpeg */; };
+		3F916ECD2360EBDF00856B96 /* Jango Fett.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ECC2360EBDF00856B96 /* Jango Fett.jpeg */; };
+		3F916ECF2360EBF700856B96 /* Zam Wesell.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ECE2360EBF700856B96 /* Zam Wesell.jpeg */; };
+		3F916ED12360EC1500856B96 /* Dexter Jettster.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ED02360EC1500856B96 /* Dexter Jettster.jpeg */; };
+		3F916ED32360EC2B00856B96 /* Lama Su.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ED22360EC2B00856B96 /* Lama Su.jpeg */; };
+		3F916ED52360EC4700856B96 /* Taun We.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ED42360EC4700856B96 /* Taun We.jpeg */; };
+		3F916ED72360EC5F00856B96 /* Jocasta Nu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ED62360EC5F00856B96 /* Jocasta Nu.jpeg */; };
+		3F916ED92360EC7E00856B96 /* R4-P17.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916ED82360EC7E00856B96 /* R4-P17.jpeg */; };
+		3F916EDB2360EC9600856B96 /* Wat Tambor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EDA2360EC9600856B96 /* Wat Tambor.jpeg */; };
+		3F916EDD2360ECB700856B96 /* San Hill.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EDC2360ECB700856B96 /* San Hill.jpeg */; };
+		3F916EDF2360ECD500856B96 /* Shaak Ti.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EDE2360ECD500856B96 /* Shaak Ti.jpeg */; };
+		3F916EE12360ECF000856B96 /* Grievous.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EE02360ECF000856B96 /* Grievous.jpeg */; };
+		3F916EE32360ED0A00856B96 /* Tarfful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EE22360ED0900856B96 /* Tarfful.jpeg */; };
+		3F916EE52360ED4200856B96 /* Raymus Antilles.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EE42360ED4200856B96 /* Raymus Antilles.jpeg */; };
+		3F916EE72360ED5A00856B96 /* Sly Moore.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EE62360ED5900856B96 /* Sly Moore.jpeg */; };
+		3F916EE92360ED7300856B96 /* Tion Medon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EE82360ED7300856B96 /* Tion Medon.jpeg */; };
+		3F916EEB2360ED9800856B96 /* Finn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EEA2360ED9800856B96 /* Finn.jpeg */; };
+		3F916EED2360EDB800856B96 /* Rey.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EEC2360EDB800856B96 /* Rey.jpeg */; };
+		3F916EEF2360EDD600856B96 /* Poe Dameron.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EEE2360EDD600856B96 /* Poe Dameron.jpeg */; };
+		3F916EF12360EDFB00856B96 /* BB8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EF02360EDFB00856B96 /* BB8.jpeg */; };
+		3F916EF32360EE1400856B96 /* Captain Phasma.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EF22360EE1400856B96 /* Captain Phasma.jpeg */; };
+		3F916EF52360F3E800856B96 /* Cordé.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F916EF42360F3E800856B96 /* Cordé.jpeg */; };
+		3F916EF72360FB0400856B96 /* planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F916EF62360FB0400856B96 /* planets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +111,94 @@
 		3F8951D2235F772800DA6CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F8951D3235F772800DA6CA0 /* StarWarsAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarWarsAPI.entitlements; sourceTree = "<group>"; };
 		3F8951D9235F77F300DA6CA0 /* people.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = people.swift; sourceTree = "<group>"; };
+		3F916E462360E14700856B96 /* Luke Skywalker.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Luke Skywalker.jpeg"; sourceTree = "<group>"; };
+		3F916E482360E19D00856B96 /* C-3PO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "C-3PO.jpeg"; sourceTree = "<group>"; };
+		3F916E4A2360E1DB00856B96 /* R2-D2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "R2-D2.jpeg"; sourceTree = "<group>"; };
+		3F916E4C2360E20600856B96 /* Darth Vader.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Darth Vader.jpeg"; sourceTree = "<group>"; };
+		3F916E4E2360E22800856B96 /* Leia Organa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Leia Organa.jpeg"; sourceTree = "<group>"; };
+		3F916E502360E25B00856B96 /* Owen Lars.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Owen Lars.jpeg"; sourceTree = "<group>"; };
+		3F916E522360E2BF00856B96 /* Beru Whitesun lars.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Beru Whitesun lars.jpeg"; sourceTree = "<group>"; };
+		3F916E542360E2EC00856B96 /* R5-D4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "R5-D4.jpeg"; sourceTree = "<group>"; };
+		3F916E562360E30A00856B96 /* Biggs Darklighter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Biggs Darklighter.jpeg"; sourceTree = "<group>"; };
+		3F916E582360E33300856B96 /* Obi-Wan Kenobi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Obi-Wan Kenobi.jpeg"; sourceTree = "<group>"; };
+		3F916E5A2360E42300856B96 /* Anakin Skywalker.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Anakin Skywalker.jpeg"; sourceTree = "<group>"; };
+		3F916E5C2360E44700856B96 /* Wilhuff Tarkin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wilhuff Tarkin.jpeg"; sourceTree = "<group>"; };
+		3F916E5E2360E47600856B96 /* Chewbacca.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chewbacca.jpeg; sourceTree = "<group>"; };
+		3F916E602360E4A100856B96 /* Han Solo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Han Solo.jpeg"; sourceTree = "<group>"; };
+		3F916E622360E4C500856B96 /* Greedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Greedo.jpeg; sourceTree = "<group>"; };
+		3F916E642360E4EC00856B96 /* Jabba Desilijic Tiure.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jabba Desilijic Tiure.jpeg"; sourceTree = "<group>"; };
+		3F916E662360E53A00856B96 /* Wedge Antilles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wedge Antilles.jpeg"; sourceTree = "<group>"; };
+		3F916E682360E55D00856B96 /* Jek Tono Porkins.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jek Tono Porkins.jpeg"; sourceTree = "<group>"; };
+		3F916E6A2360E58E00856B96 /* Yoda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yoda.jpeg; sourceTree = "<group>"; };
+		3F916E6C2360E5AF00856B96 /* Palpatine.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Palpatine.jpeg; sourceTree = "<group>"; };
+		3F916E6E2360E5DD00856B96 /* Boba Fett.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Boba Fett.jpeg"; sourceTree = "<group>"; };
+		3F916E702360E60D00856B96 /* IG-88.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IG-88.jpeg"; sourceTree = "<group>"; };
+		3F916E722360E63200856B96 /* Bossk.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bossk.jpeg; sourceTree = "<group>"; };
+		3F916E742360E65600856B96 /* Lando Calrissian.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lando Calrissian.jpeg"; sourceTree = "<group>"; };
+		3F916E762360E66E00856B96 /* Lobot.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lobot.jpeg; sourceTree = "<group>"; };
+		3F916E782360E68A00856B96 /* Ackbar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ackbar.jpeg; sourceTree = "<group>"; };
+		3F916E7A2360E6A400856B96 /* Mon Mothma.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mon Mothma.jpeg"; sourceTree = "<group>"; };
+		3F916E7C2360E6C000856B96 /* Arvel Crynyd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Arvel Crynyd.jpeg"; sourceTree = "<group>"; };
+		3F916E7E2360E6F400856B96 /* Wicket Systri Warrick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wicket Systri Warrick.jpeg"; sourceTree = "<group>"; };
+		3F916E802360E72C00856B96 /* Nien Nunb.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nien Nunb.jpeg"; sourceTree = "<group>"; };
+		3F916E822360E74700856B96 /* Qui-Gon Jinn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Qui-Gon Jinn.jpeg"; sourceTree = "<group>"; };
+		3F916E842360E76600856B96 /* Nute Gunray.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nute Gunray.jpeg"; sourceTree = "<group>"; };
+		3F916E862360E78000856B96 /* Finis Valorum.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Finis Valorum.jpeg"; sourceTree = "<group>"; };
+		3F916E882360E7A200856B96 /* Padmé Amidala.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Padmé Amidala.jpeg"; sourceTree = "<group>"; };
+		3F916E8A2360E7BE00856B96 /* Jar Jar Binks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jar Jar Binks.jpeg"; sourceTree = "<group>"; };
+		3F916E8C2360E7DF00856B96 /* Roos Tarpals.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Roos Tarpals.jpeg"; sourceTree = "<group>"; };
+		3F916E8E2360E80000856B96 /* Rugor Nass.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rugor Nass.jpeg"; sourceTree = "<group>"; };
+		3F916E902360E81D00856B96 /* Ric Olié.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ric Olié.jpeg"; sourceTree = "<group>"; };
+		3F916E922360E83500856B96 /* Watto.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Watto.jpeg; sourceTree = "<group>"; };
+		3F916E942360E84B00856B96 /* Sebulba.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sebulba.jpeg; sourceTree = "<group>"; };
+		3F916E962360E86B00856B96 /* Quarsh Panaka.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Quarsh Panaka.jpeg"; sourceTree = "<group>"; };
+		3F916E982360E88800856B96 /* Shmi Skywalker.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shmi Skywalker.jpeg"; sourceTree = "<group>"; };
+		3F916E9A2360E8A300856B96 /* Darth Maul.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Darth Maul.jpeg"; sourceTree = "<group>"; };
+		3F916E9C2360E8C000856B96 /* Bib Fortuna.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bib Fortuna.jpeg"; sourceTree = "<group>"; };
+		3F916E9E2360E90900856B96 /* Ayla Secura.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ayla Secura.jpeg"; sourceTree = "<group>"; };
+		3F916EA02360E92900856B96 /* Ratts Tyerell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ratts Tyerell.jpeg"; sourceTree = "<group>"; };
+		3F916EA22360E93F00856B96 /* Dud Bolt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dud Bolt.jpeg"; sourceTree = "<group>"; };
+		3F916EA42360E95300856B96 /* Gasgano.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gasgano.jpeg; sourceTree = "<group>"; };
+		3F916EA62360E96A00856B96 /* Ben Quadinaros.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ben Quadinaros.jpeg"; sourceTree = "<group>"; };
+		3F916EA82360E98400856B96 /* Mace Windu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mace Windu.jpeg"; sourceTree = "<group>"; };
+		3F916EAA2360E99C00856B96 /* Ki-Adi-Mundi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ki-Adi-Mundi.jpeg"; sourceTree = "<group>"; };
+		3F916EAC2360E9C300856B96 /* Kit Fisto.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kit Fisto.jpeg"; sourceTree = "<group>"; };
+		3F916EAE2360E9E100856B96 /* Eeth Koth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Eeth Koth.jpeg"; sourceTree = "<group>"; };
+		3F916EB02360E9FD00856B96 /* Adi Gallia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Adi Gallia.jpeg"; sourceTree = "<group>"; };
+		3F916EB22360EA1800856B96 /* Saesee Tiin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Saesee Tiin.jpeg"; sourceTree = "<group>"; };
+		3F916EB42360EA4E00856B96 /* Yarael Poof.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yarael Poof.jpeg"; sourceTree = "<group>"; };
+		3F916EB62360EA7000856B96 /* Plo Koon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Plo Koon.jpeg"; sourceTree = "<group>"; };
+		3F916EB82360EA9400856B96 /* Mas Amedda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mas Amedda.jpeg"; sourceTree = "<group>"; };
+		3F916EBA2360EAB800856B96 /* Gregar Typho.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gregar Typho.jpeg"; sourceTree = "<group>"; };
+		3F916EBE2360EAEE00856B96 /* Cliegg Lars.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cliegg Lars.jpeg"; sourceTree = "<group>"; };
+		3F916EC02360EB0800856B96 /* Poggle the Lesser.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Poggle the Lesser.jpeg"; sourceTree = "<group>"; };
+		3F916EC22360EB2300856B96 /* Luminara Unduli.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Luminara Unduli.jpeg"; sourceTree = "<group>"; };
+		3F916EC42360EB3A00856B96 /* Barriss Offee.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barriss Offee.jpeg"; sourceTree = "<group>"; };
+		3F916EC62360EB5A00856B96 /* Dormé.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dormé.jpeg"; sourceTree = "<group>"; };
+		3F916EC82360EB9000856B96 /* Dooku.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dooku.jpeg; sourceTree = "<group>"; };
+		3F916ECA2360EBBD00856B96 /* Bail Prestor Organa.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bail Prestor Organa.jpeg"; sourceTree = "<group>"; };
+		3F916ECC2360EBDF00856B96 /* Jango Fett.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jango Fett.jpeg"; sourceTree = "<group>"; };
+		3F916ECE2360EBF700856B96 /* Zam Wesell.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Zam Wesell.jpeg"; sourceTree = "<group>"; };
+		3F916ED02360EC1500856B96 /* Dexter Jettster.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dexter Jettster.jpeg"; sourceTree = "<group>"; };
+		3F916ED22360EC2B00856B96 /* Lama Su.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lama Su.jpeg"; sourceTree = "<group>"; };
+		3F916ED42360EC4700856B96 /* Taun We.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Taun We.jpeg"; sourceTree = "<group>"; };
+		3F916ED62360EC5F00856B96 /* Jocasta Nu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jocasta Nu.jpeg"; sourceTree = "<group>"; };
+		3F916ED82360EC7E00856B96 /* R4-P17.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "R4-P17.jpeg"; sourceTree = "<group>"; };
+		3F916EDA2360EC9600856B96 /* Wat Tambor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wat Tambor.jpeg"; sourceTree = "<group>"; };
+		3F916EDC2360ECB700856B96 /* San Hill.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "San Hill.jpeg"; sourceTree = "<group>"; };
+		3F916EDE2360ECD500856B96 /* Shaak Ti.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shaak Ti.jpeg"; sourceTree = "<group>"; };
+		3F916EE02360ECF000856B96 /* Grievous.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Grievous.jpeg; sourceTree = "<group>"; };
+		3F916EE22360ED0900856B96 /* Tarfful.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tarfful.jpeg; sourceTree = "<group>"; };
+		3F916EE42360ED4200856B96 /* Raymus Antilles.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Raymus Antilles.jpeg"; sourceTree = "<group>"; };
+		3F916EE62360ED5900856B96 /* Sly Moore.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sly Moore.jpeg"; sourceTree = "<group>"; };
+		3F916EE82360ED7300856B96 /* Tion Medon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tion Medon.jpeg"; sourceTree = "<group>"; };
+		3F916EEA2360ED9800856B96 /* Finn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Finn.jpeg; sourceTree = "<group>"; };
+		3F916EEC2360EDB800856B96 /* Rey.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rey.jpeg; sourceTree = "<group>"; };
+		3F916EEE2360EDD600856B96 /* Poe Dameron.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Poe Dameron.jpeg"; sourceTree = "<group>"; };
+		3F916EF02360EDFB00856B96 /* BB8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BB8.jpeg; sourceTree = "<group>"; };
+		3F916EF22360EE1400856B96 /* Captain Phasma.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Captain Phasma.jpeg"; sourceTree = "<group>"; };
+		3F916EF42360F3E800856B96 /* Cordé.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cordé.jpeg"; sourceTree = "<group>"; };
+		3F916EF62360FB0400856B96 /* planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +234,95 @@
 				3F8951C9235F772700DA6CA0 /* AppDelegate.swift */,
 				3F8951CB235F772700DA6CA0 /* ViewController.swift */,
 				3F8951D9235F77F300DA6CA0 /* people.swift */,
+				3F916EF62360FB0400856B96 /* planets.swift */,
 				3F8951CD235F772800DA6CA0 /* Assets.xcassets */,
+				3F916E482360E19D00856B96 /* C-3PO.jpeg */,
+				3F916E462360E14700856B96 /* Luke Skywalker.jpeg */,
+				3F916E4E2360E22800856B96 /* Leia Organa.jpeg */,
+				3F916E582360E33300856B96 /* Obi-Wan Kenobi.jpeg */,
+				3F916E4A2360E1DB00856B96 /* R2-D2.jpeg */,
+				3F916E602360E4A100856B96 /* Han Solo.jpeg */,
+				3F916E542360E2EC00856B96 /* R5-D4.jpeg */,
+				3F916E522360E2BF00856B96 /* Beru Whitesun lars.jpeg */,
+				3F916E5E2360E47600856B96 /* Chewbacca.jpeg */,
+				3F916E642360E4EC00856B96 /* Jabba Desilijic Tiure.jpeg */,
+				3F916E562360E30A00856B96 /* Biggs Darklighter.jpeg */,
+				3F916E722360E63200856B96 /* Bossk.jpeg */,
+				3F916E742360E65600856B96 /* Lando Calrissian.jpeg */,
+				3F916E622360E4C500856B96 /* Greedo.jpeg */,
+				3F916E6E2360E5DD00856B96 /* Boba Fett.jpeg */,
+				3F916E702360E60D00856B96 /* IG-88.jpeg */,
+				3F916E802360E72C00856B96 /* Nien Nunb.jpeg */,
+				3F916E5C2360E44700856B96 /* Wilhuff Tarkin.jpeg */,
+				3F916ECC2360EBDF00856B96 /* Jango Fett.jpeg */,
+				3F916ED42360EC4700856B96 /* Taun We.jpeg */,
+				3F916EE82360ED7300856B96 /* Tion Medon.jpeg */,
+				3F916EF22360EE1400856B96 /* Captain Phasma.jpeg */,
+				3F916EE02360ECF000856B96 /* Grievous.jpeg */,
+				3F916ED02360EC1500856B96 /* Dexter Jettster.jpeg */,
+				3F916EEC2360EDB800856B96 /* Rey.jpeg */,
+				3F916EF02360EDFB00856B96 /* BB8.jpeg */,
+				3F916EEE2360EDD600856B96 /* Poe Dameron.jpeg */,
+				3F916EEA2360ED9800856B96 /* Finn.jpeg */,
+				3F916EE62360ED5900856B96 /* Sly Moore.jpeg */,
+				3F916EDC2360ECB700856B96 /* San Hill.jpeg */,
+				3F916EE22360ED0900856B96 /* Tarfful.jpeg */,
+				3F916EE42360ED4200856B96 /* Raymus Antilles.jpeg */,
+				3F916E7E2360E6F400856B96 /* Wicket Systri Warrick.jpeg */,
+				3F916EDE2360ECD500856B96 /* Shaak Ti.jpeg */,
+				3F916EDA2360EC9600856B96 /* Wat Tambor.jpeg */,
+				3F916ED82360EC7E00856B96 /* R4-P17.jpeg */,
+				3F916ED62360EC5F00856B96 /* Jocasta Nu.jpeg */,
+				3F916ED22360EC2B00856B96 /* Lama Su.jpeg */,
+				3F916EC62360EB5A00856B96 /* Dormé.jpeg */,
+				3F916EA42360E95300856B96 /* Gasgano.jpeg */,
+				3F916EAE2360E9E100856B96 /* Eeth Koth.jpeg */,
+				3F916ECE2360EBF700856B96 /* Zam Wesell.jpeg */,
+				3F916ECA2360EBBD00856B96 /* Bail Prestor Organa.jpeg */,
+				3F916EBE2360EAEE00856B96 /* Cliegg Lars.jpeg */,
+				3F916EC82360EB9000856B96 /* Dooku.jpeg */,
+				3F916EB42360EA4E00856B96 /* Yarael Poof.jpeg */,
+				3F916EC42360EB3A00856B96 /* Barriss Offee.jpeg */,
+				3F916EC22360EB2300856B96 /* Luminara Unduli.jpeg */,
+				3F916EC02360EB0800856B96 /* Poggle the Lesser.jpeg */,
+				3F916EB82360EA9400856B96 /* Mas Amedda.jpeg */,
+				3F916EB62360EA7000856B96 /* Plo Koon.jpeg */,
+				3F916EA82360E98400856B96 /* Mace Windu.jpeg */,
+				3F916EBA2360EAB800856B96 /* Gregar Typho.jpeg */,
+				3F916E9C2360E8C000856B96 /* Bib Fortuna.jpeg */,
+				3F916EB22360EA1800856B96 /* Saesee Tiin.jpeg */,
+				3F916EF42360F3E800856B96 /* Cordé.jpeg */,
+				3F916EB02360E9FD00856B96 /* Adi Gallia.jpeg */,
+				3F916EAC2360E9C300856B96 /* Kit Fisto.jpeg */,
+				3F916E9A2360E8A300856B96 /* Darth Maul.jpeg */,
+				3F916EAA2360E99C00856B96 /* Ki-Adi-Mundi.jpeg */,
+				3F916EA62360E96A00856B96 /* Ben Quadinaros.jpeg */,
+				3F916EA02360E92900856B96 /* Ratts Tyerell.jpeg */,
+				3F916EA22360E93F00856B96 /* Dud Bolt.jpeg */,
+				3F916E9E2360E90900856B96 /* Ayla Secura.jpeg */,
+				3F916E942360E84B00856B96 /* Sebulba.jpeg */,
+				3F916E882360E7A200856B96 /* Padmé Amidala.jpeg */,
+				3F916E902360E81D00856B96 /* Ric Olié.jpeg */,
+				3F916E6C2360E5AF00856B96 /* Palpatine.jpeg */,
+				3F916E962360E86B00856B96 /* Quarsh Panaka.jpeg */,
+				3F916E982360E88800856B96 /* Shmi Skywalker.jpeg */,
+				3F916E7C2360E6C000856B96 /* Arvel Crynyd.jpeg */,
+				3F916E922360E83500856B96 /* Watto.jpeg */,
+				3F916E8E2360E80000856B96 /* Rugor Nass.jpeg */,
+				3F916E8C2360E7DF00856B96 /* Roos Tarpals.jpeg */,
+				3F916E862360E78000856B96 /* Finis Valorum.jpeg */,
+				3F916E8A2360E7BE00856B96 /* Jar Jar Binks.jpeg */,
+				3F916E842360E76600856B96 /* Nute Gunray.jpeg */,
+				3F916E7A2360E6A400856B96 /* Mon Mothma.jpeg */,
+				3F916E822360E74700856B96 /* Qui-Gon Jinn.jpeg */,
+				3F916E782360E68A00856B96 /* Ackbar.jpeg */,
+				3F916E6A2360E58E00856B96 /* Yoda.jpeg */,
+				3F916E682360E55D00856B96 /* Jek Tono Porkins.jpeg */,
+				3F916E662360E53A00856B96 /* Wedge Antilles.jpeg */,
+				3F916E4C2360E20600856B96 /* Darth Vader.jpeg */,
+				3F916E762360E66E00856B96 /* Lobot.jpeg */,
+				3F916E502360E25B00856B96 /* Owen Lars.jpeg */,
+				3F916E5A2360E42300856B96 /* Anakin Skywalker.jpeg */,
 				3F8951CF235F772800DA6CA0 /* Main.storyboard */,
 				3F8951D2235F772800DA6CA0 /* Info.plist */,
 				3F8951D3235F772800DA6CA0 /* StarWarsAPI.entitlements */,
@@ -129,8 +393,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F916EAF2360E9E100856B96 /* Eeth Koth.jpeg in Resources */,
+				3F916E972360E86B00856B96 /* Quarsh Panaka.jpeg in Resources */,
+				3F916E592360E33300856B96 /* Obi-Wan Kenobi.jpeg in Resources */,
+				3F916EB12360E9FD00856B96 /* Adi Gallia.jpeg in Resources */,
+				3F916E4F2360E22800856B96 /* Leia Organa.jpeg in Resources */,
+				3F916ED32360EC2B00856B96 /* Lama Su.jpeg in Resources */,
+				3F916EA72360E96A00856B96 /* Ben Quadinaros.jpeg in Resources */,
+				3F916E9B2360E8A400856B96 /* Darth Maul.jpeg in Resources */,
+				3F916EDB2360EC9600856B96 /* Wat Tambor.jpeg in Resources */,
+				3F916E572360E30A00856B96 /* Biggs Darklighter.jpeg in Resources */,
+				3F916E7B2360E6A400856B96 /* Mon Mothma.jpeg in Resources */,
+				3F916ED72360EC5F00856B96 /* Jocasta Nu.jpeg in Resources */,
+				3F916E872360E78000856B96 /* Finis Valorum.jpeg in Resources */,
+				3F916E492360E19D00856B96 /* C-3PO.jpeg in Resources */,
+				3F916ECD2360EBDF00856B96 /* Jango Fett.jpeg in Resources */,
+				3F916EC52360EB3A00856B96 /* Barriss Offee.jpeg in Resources */,
+				3F916EDD2360ECB700856B96 /* San Hill.jpeg in Resources */,
+				3F916E552360E2ED00856B96 /* R5-D4.jpeg in Resources */,
+				3F916EB92360EA9400856B96 /* Mas Amedda.jpeg in Resources */,
+				3F916EDF2360ECD500856B96 /* Shaak Ti.jpeg in Resources */,
+				3F916EED2360EDB800856B96 /* Rey.jpeg in Resources */,
+				3F916E612360E4A100856B96 /* Han Solo.jpeg in Resources */,
+				3F916E952360E84C00856B96 /* Sebulba.jpeg in Resources */,
+				3F916EEB2360ED9800856B96 /* Finn.jpeg in Resources */,
+				3F916EF12360EDFB00856B96 /* BB8.jpeg in Resources */,
+				3F916ED12360EC1500856B96 /* Dexter Jettster.jpeg in Resources */,
+				3F916E832360E74700856B96 /* Qui-Gon Jinn.jpeg in Resources */,
+				3F916EB72360EA7000856B96 /* Plo Koon.jpeg in Resources */,
+				3F916ED92360EC7E00856B96 /* R4-P17.jpeg in Resources */,
+				3F916EAB2360E99C00856B96 /* Ki-Adi-Mundi.jpeg in Resources */,
+				3F916E632360E4C500856B96 /* Greedo.jpeg in Resources */,
+				3F916E912360E81D00856B96 /* Ric Olié.jpeg in Resources */,
+				3F916E5D2360E44700856B96 /* Wilhuff Tarkin.jpeg in Resources */,
+				3F916E6D2360E5AF00856B96 /* Palpatine.jpeg in Resources */,
+				3F916E8F2360E80000856B96 /* Rugor Nass.jpeg in Resources */,
+				3F916E892360E7A300856B96 /* Padmé Amidala.jpeg in Resources */,
+				3F916E992360E88800856B96 /* Shmi Skywalker.jpeg in Resources */,
+				3F916EC72360EB5A00856B96 /* Dormé.jpeg in Resources */,
+				3F916E672360E53B00856B96 /* Wedge Antilles.jpeg in Resources */,
+				3F916E752360E65600856B96 /* Lando Calrissian.jpeg in Resources */,
+				3F916EE12360ECF000856B96 /* Grievous.jpeg in Resources */,
+				3F916EEF2360EDD600856B96 /* Poe Dameron.jpeg in Resources */,
+				3F916E692360E55D00856B96 /* Jek Tono Porkins.jpeg in Resources */,
+				3F916E712360E60D00856B96 /* IG-88.jpeg in Resources */,
+				3F916E5F2360E47600856B96 /* Chewbacca.jpeg in Resources */,
+				3F916E852360E76600856B96 /* Nute Gunray.jpeg in Resources */,
+				3F916EAD2360E9C300856B96 /* Kit Fisto.jpeg in Resources */,
+				3F916E652360E4EC00856B96 /* Jabba Desilijic Tiure.jpeg in Resources */,
+				3F916EE92360ED7300856B96 /* Tion Medon.jpeg in Resources */,
+				3F916EA52360E95300856B96 /* Gasgano.jpeg in Resources */,
+				3F916EB52360EA4E00856B96 /* Yarael Poof.jpeg in Resources */,
+				3F916EA92360E98400856B96 /* Mace Windu.jpeg in Resources */,
+				3F916E4D2360E20600856B96 /* Darth Vader.jpeg in Resources */,
+				3F916E4B2360E1DB00856B96 /* R2-D2.jpeg in Resources */,
+				3F916EC92360EB9000856B96 /* Dooku.jpeg in Resources */,
+				3F916EBB2360EAB800856B96 /* Gregar Typho.jpeg in Resources */,
+				3F916ECF2360EBF700856B96 /* Zam Wesell.jpeg in Resources */,
 				3F8951CE235F772800DA6CA0 /* Assets.xcassets in Resources */,
+				3F916EF52360F3E800856B96 /* Cordé.jpeg in Resources */,
+				3F916E512360E25B00856B96 /* Owen Lars.jpeg in Resources */,
+				3F916E732360E63300856B96 /* Bossk.jpeg in Resources */,
+				3F916E6B2360E58E00856B96 /* Yoda.jpeg in Resources */,
 				3F8951D1235F772800DA6CA0 /* Main.storyboard in Resources */,
+				3F916E8B2360E7BE00856B96 /* Jar Jar Binks.jpeg in Resources */,
+				3F916E532360E2BF00856B96 /* Beru Whitesun lars.jpeg in Resources */,
+				3F916E7F2360E6F400856B96 /* Wicket Systri Warrick.jpeg in Resources */,
+				3F916EA32360E93F00856B96 /* Dud Bolt.jpeg in Resources */,
+				3F916EF32360EE1400856B96 /* Captain Phasma.jpeg in Resources */,
+				3F916E9F2360E90900856B96 /* Ayla Secura.jpeg in Resources */,
+				3F916EA12360E92900856B96 /* Ratts Tyerell.jpeg in Resources */,
+				3F916E9D2360E8C000856B96 /* Bib Fortuna.jpeg in Resources */,
+				3F916EB32360EA1800856B96 /* Saesee Tiin.jpeg in Resources */,
+				3F916E6F2360E5DD00856B96 /* Boba Fett.jpeg in Resources */,
+				3F916E772360E66E00856B96 /* Lobot.jpeg in Resources */,
+				3F916E932360E83500856B96 /* Watto.jpeg in Resources */,
+				3F916ED52360EC4700856B96 /* Taun We.jpeg in Resources */,
+				3F916EE52360ED4200856B96 /* Raymus Antilles.jpeg in Resources */,
+				3F916EC12360EB0800856B96 /* Poggle the Lesser.jpeg in Resources */,
+				3F916E5B2360E42400856B96 /* Anakin Skywalker.jpeg in Resources */,
+				3F916ECB2360EBBD00856B96 /* Bail Prestor Organa.jpeg in Resources */,
+				3F916E472360E14700856B96 /* Luke Skywalker.jpeg in Resources */,
+				3F916EE32360ED0A00856B96 /* Tarfful.jpeg in Resources */,
+				3F916E7D2360E6C000856B96 /* Arvel Crynyd.jpeg in Resources */,
+				3F916E792360E68A00856B96 /* Ackbar.jpeg in Resources */,
+				3F916EBF2360EAEE00856B96 /* Cliegg Lars.jpeg in Resources */,
+				3F916E812360E72C00856B96 /* Nien Nunb.jpeg in Resources */,
+				3F916EC32360EB2300856B96 /* Luminara Unduli.jpeg in Resources */,
+				3F916EE72360ED5A00856B96 /* Sly Moore.jpeg in Resources */,
+				3F916E8D2360E7DF00856B96 /* Roos Tarpals.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +495,7 @@
 				3F8951CC235F772700DA6CA0 /* ViewController.swift in Sources */,
 				3F8951CA235F772700DA6CA0 /* AppDelegate.swift in Sources */,
 				3F8951DA235F77F300DA6CA0 /* people.swift in Sources */,
+				3F916EF72360FB0400856B96 /* planets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

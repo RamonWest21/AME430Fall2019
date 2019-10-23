@@ -13,6 +13,6 @@ struct people: Decodable {
     var height: String
     var birthYear: String
     var gender: String
-   // var homeworld: String
+    var homeworld: String
     
 }
