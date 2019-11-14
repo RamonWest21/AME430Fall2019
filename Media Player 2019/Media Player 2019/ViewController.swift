@@ -15,6 +15,9 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var playerView: AVPlayerView!
     
+    @IBOutlet weak var timeCode: NSTextField!
+    @IBOutlet weak var playButtonLabel: NSButton!
+    @IBOutlet weak var duration: NSTextField!
     
     var isPlaying = false
     var movieIsOpen = false
@@ -32,6 +35,8 @@ class ViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
         self.view.window?.title = videoTitle
+        playButtonLabel.title = "⏯"
+        
     }
 
     override var acceptsFirstResponder: Bool { return true }
@@ -64,17 +69,27 @@ class ViewController: NSViewController {
         let player = AVPlayer(playerItem: item)
         
         playerView.player = player
+        
+        var rate: Float = 30.0
+        if let track = asset.tracks(withMediaType: .video).first {
+            rate = track.nominalFrameRate
+            
+        }
+        let duration = Timecode(time: asset.duration, rate: rate)
+        
     }
     
     // alternates between play and pause states
     @IBAction func playPause(_ sender: NSButton) {
         if isPlaying == false{
             playerView.player?.play()
+            playButtonLabel.title = "⏸"
             isPlaying = true
         }
         
         else if isPlaying == true{
             playerView.player?.pause()
+            playButtonLabel.title = "▶️"
             isPlaying = false
         }
         displayTime()
@@ -128,6 +143,7 @@ class ViewController: NSViewController {
 //            print(currentTimeString)
 //        }
         let timeLabel = playerView.accessibilityLabel()
+        
         return currentTimeString
     }
     

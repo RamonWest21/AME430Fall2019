@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F720A5E23467501002CE526 /* Timecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F720A5D23467501002CE526 /* Timecode.swift */; };
 		3F7FA35A2343FF8C00180757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FA3592343FF8C00180757 /* AppDelegate.swift */; };
 		3F7FA35C2343FF8C00180757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FA35B2343FF8C00180757 /* ViewController.swift */; };
 		3F7FA35E2343FF8D00180757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7FA35D2343FF8D00180757 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F720A5D23467501002CE526 /* Timecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timecode.swift; sourceTree = "<group>"; };
 		3F7FA3562343FF8C00180757 /* Media Player 2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Media Player 2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7FA3592343FF8C00180757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7FA35B2343FF8C00180757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				3F7FA35B2343FF8C00180757 /* ViewController.swift */,
 				3F7FA35D2343FF8D00180757 /* Assets.xcassets */,
 				3F7FA35F2343FF8D00180757 /* Main.storyboard */,
+				3F720A5D23467501002CE526 /* Timecode.swift */,
 				3F7FA3622343FF8D00180757 /* Info.plist */,
 				3F7FA3632343FF8D00180757 /* Media_Player_2019.entitlements */,
 			);
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7FA35C2343FF8C00180757 /* ViewController.swift in Sources */,
+				3F720A5E23467501002CE526 /* Timecode.swift in Sources */,
 				3F7FA35A2343FF8C00180757 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
