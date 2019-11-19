@@ -1,0 +1,26 @@
+USER DATA
+
+uderData is a dictionary object. Can store information, like score.
+
+hero.userData = [“score”: score]
+
+if nameB == “Block” {
+    block sound.run(SKAction.play())
+    trash.append(nodeB)
+    if let dict = nodeB.userData, let points = dict[“points”] as! Int? {
+        score += points . . .
+
+.............................................................
+
+EXTENSION
+
+Game.swift
+Game+Create.swift
+
+import Cocoa
+extension Game {
+. . . //add methods, but not properties to the Game class, in a separate         file.
+}
+
+extension can be used to extend classes that you do not own. TVector2, CGVector, etc.
+
