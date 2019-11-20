@@ -14,6 +14,12 @@
 		3F5F54982384647F00A1985D /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F54972384647F00A1985D /* Notes.txt */; };
 		3F5F549A2384657F00A1985D /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F54992384657F00A1985D /* Intro.swift */; };
 		3F5F549C2384688700A1985D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F549B2384688700A1985D /* Game.swift */; };
+		3F88043F2385C8DC00134CED /* BarrelCannon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F88043A2385C8DB00134CED /* BarrelCannon.png */; };
+		3F8804402385C8DC00134CED /* DonkeyKongCountryMap01JungleHijinxsBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F88043B2385C8DC00134CED /* DonkeyKongCountryMap01JungleHijinxsBG.png */; };
+		3F8804412385C8DC00134CED /* RegularBarrel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F88043C2385C8DC00134CED /* RegularBarrel.png */; };
+		3F8804422385C8DC00134CED /* Kritter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F88043D2385C8DC00134CED /* Kritter.png */; };
+		3F8804432385C8DC00134CED /* DonkeyKongLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F88043E2385C8DC00134CED /* DonkeyKongLeft.png */; };
+		3FC880472385E0D700520D37 /* DKThemeMidi - 11:20:19, 1.55 PM.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FC880462385E0D700520D37 /* DKThemeMidi - 11:20:19, 1.55 PM.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		3F5F54972384647F00A1985D /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		3F5F54992384657F00A1985D /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		3F5F549B2384688700A1985D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3F88043A2385C8DB00134CED /* BarrelCannon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarrelCannon.png; sourceTree = "<group>"; };
+		3F88043B2385C8DC00134CED /* DonkeyKongCountryMap01JungleHijinxsBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonkeyKongCountryMap01JungleHijinxsBG.png; sourceTree = "<group>"; };
+		3F88043C2385C8DC00134CED /* RegularBarrel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RegularBarrel.png; sourceTree = "<group>"; };
+		3F88043D2385C8DC00134CED /* Kritter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kritter.png; sourceTree = "<group>"; };
+		3F88043E2385C8DC00134CED /* DonkeyKongLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DonkeyKongLeft.png; sourceTree = "<group>"; };
+		3FC880462385E0D700520D37 /* DKThemeMidi - 11:20:19, 1.55 PM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "DKThemeMidi - 11:20:19, 1.55 PM.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +73,16 @@
 			children = (
 				3F5F5487238462AF00A1985D /* AppDelegate.swift */,
 				3F5F5489238462AF00A1985D /* ViewController.swift */,
-				3F5F549B2384688700A1985D /* Game.swift */,
 				3F5F54992384657F00A1985D /* Intro.swift */,
+				3F5F549B2384688700A1985D /* Game.swift */,
 				3F5F54972384647F00A1985D /* Notes.txt */,
 				3F5F548B238462B000A1985D /* Assets.xcassets */,
+				3F88043A2385C8DB00134CED /* BarrelCannon.png */,
+				3F88043B2385C8DC00134CED /* DonkeyKongCountryMap01JungleHijinxsBG.png */,
+				3F88043E2385C8DC00134CED /* DonkeyKongLeft.png */,
+				3F88043D2385C8DC00134CED /* Kritter.png */,
+				3F88043C2385C8DC00134CED /* RegularBarrel.png */,
+				3FC880462385E0D700520D37 /* DKThemeMidi - 11:20:19, 1.55 PM.wav */,
 				3F5F548D238462B000A1985D /* Main.storyboard */,
 				3F5F5490238462B000A1985D /* Info.plist */,
 				3F5F5491238462B000A1985D /* AngryBird.entitlements */,
@@ -130,6 +148,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC880472385E0D700520D37 /* DKThemeMidi - 11:20:19, 1.55 PM.wav in Resources */,
+				3F8804412385C8DC00134CED /* RegularBarrel.png in Resources */,
+				3F8804432385C8DC00134CED /* DonkeyKongLeft.png in Resources */,
+				3F8804422385C8DC00134CED /* Kritter.png in Resources */,
+				3F88043F2385C8DC00134CED /* BarrelCannon.png in Resources */,
+				3F8804402385C8DC00134CED /* DonkeyKongCountryMap01JungleHijinxsBG.png in Resources */,
 				3F5F548C238462B000A1985D /* Assets.xcassets in Resources */,
 				3F5F54982384647F00A1985D /* Notes.txt in Resources */,
 				3F5F548F238462B000A1985D /* Main.storyboard in Resources */,

@@ -1,4 +1,25 @@
-USER DATA
+
+(Credits)
+
+Sprites:
+            BarrelCannon,
+            Kritter,
+            RegularBarrel,
+            DonkeyKongLeft,
+            DonkeyKongCountryMap01JungleHijinxsBG]
+    collected from https://www.snesmaps.com/index.html
+
+            SNES - Donkey Kong Country - Donkey Kong
+    collected from https://www.spriters-resource.com/snes/dkc/sheet/45659/
+
+Music:
+            DKThemeMidi - 11/20/19, 1.55 PM
+    mixed on Garageband at AME Media Lab. Collected from http://www.mariomayhem.com/downloads/sounds/donkey_kong_country_snes_sounds.php
+
+
+..........................................................................
+
+(USER DATA)
 
 uderData is a dictionary object. Can store information, like score.
 
@@ -10,9 +31,9 @@ if nameB == “Block” {
     if let dict = nodeB.userData, let points = dict[“points”] as! Int? {
         score += points . . .
 
-.............................................................
+..........................................................................
 
-EXTENSION
+(EXTENSION)
 
 Game.swift
 Game+Create.swift
