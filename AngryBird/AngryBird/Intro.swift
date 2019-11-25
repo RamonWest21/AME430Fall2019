@@ -29,7 +29,7 @@ class Intro: SKScene {
         
         // instructions
         let instructions = SKLabelNode(fontNamed: "Futura")
-        instructions.text = "Insert Instructions Here"
+        instructions.text = "Move left and right with 'A' and 'D'"
         instructions.fontSize = 48
         instructions.position = CGPoint(x: size.width / 2.0, y: size.height / 2.0 - 150)
         instructions.name = "Instructions Label"
