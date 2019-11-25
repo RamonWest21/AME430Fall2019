@@ -9,6 +9,7 @@
 import Foundation
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class Game: SKScene, SKPhysicsContactDelegate {
     
@@ -18,12 +19,12 @@ class Game: SKScene, SKPhysicsContactDelegate {
     var kritter: SKNode?
     var cannonBarrel: SKNode?
     var regularBarrels: [SKNode]?
+    let gameSound = SKAction.playSoundFileNamed("DKThemeMidi.wav", waitForCompletion: false)
     var points = 0 {
         didSet {
             //updatePoints()
         }
     }
-    
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
@@ -32,10 +33,12 @@ class Game: SKScene, SKPhysicsContactDelegate {
     }
     
     func updatePoints() {
+        points += 1
         if let pointsNode = childNode(withName: "Points") as? SKLabelNode {
             pointsNode.text = "\(points)"
         }
     }
+    
     
     func createGameLabel() {
         let textNode = SKLabelNode(fontNamed: "Futura")
@@ -63,7 +66,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
         let originalWidth = 37.0
         let originalHeight = 40.0
         let scale = 2.0
-        hero.position = CGPoint(x: frame.midX - 300, y: frame.midY - 150)
+        hero.position = CGPoint(x: frame.midX - 200, y: frame.midY - 150)
         hero.size = CGSize(width: originalWidth * scale, height: originalHeight * scale)
         hero.zRotation = .pi / 6.0
         hero.name = "Donkey Kong"
@@ -88,7 +91,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
         let originalWidth = 37.0
         let originalHeight = 50.0
         let scale = 2.0
-        cannon.position = CGPoint(x: frame.midX - 300, y: frame.midY)
+        cannon.position = CGPoint(x: frame.midX - 300, y: frame.midY - 150)
         cannon.size = CGSize(width: originalWidth * scale, height: originalHeight * scale)
         cannon.zRotation = .pi / 6.0
         cannon.name = "Barrel Cannon"
@@ -130,15 +133,15 @@ class Game: SKScene, SKPhysicsContactDelegate {
     }
     
     func createRegularBarrelStructure() {
-        var x = CGFloat(frame.midX + 100)
-        var y = CGFloat(frame.midY)
+        var y = CGFloat(frame.midY - 150)
         for _ in 1...2 { // column
+            var x = CGFloat(frame.midX + 100)
             for _ in 1...3{ // row
                 let barrelPosition = CGPoint(x: x, y: y)
                 createRegularBarrel(regularBarrelPosition: barrelPosition)
-                x += 40.0
+                x += 60.0
             }
-            y += 60.0
+            y += 120.0
         }
     }
     
@@ -151,11 +154,11 @@ class Game: SKScene, SKPhysicsContactDelegate {
         villain.position = kritterPosition
         villain.size = CGSize(width: originalWidth * scale, height: originalHeight * scale)
         villain.zRotation = .pi / 6.0
-        villain.name = "Regular Barrel"
+        villain.name = "Kritter"
         let body = SKPhysicsBody(rectangleOf: villain.size)
         body.isDynamic = true
         body.usesPreciseCollisionDetection = true
-        body.collisionBitMask = 0x00000000
+        body.collisionBitMask = 0x00000001
         villain.physicsBody = body
         
         let xRange = SKRange(lowerLimit: 0.0, upperLimit: frame.width)
@@ -209,18 +212,17 @@ class Game: SKScene, SKPhysicsContactDelegate {
     }
 
     func createSceneContent() {
+        
         createBackdrop()
         createGround()
         createGameLabel()
         createPointsNode()
         createDonkeyKong()
         createBarrelCannon()
-        let p = CGPoint(x: frame.midX + 200, y: frame.midY - 150)
-        let k = CGPoint(x: frame.midX + 250, y: frame.midY - 150)
-        createKritter(kritterPosition: k)
-        createRegularBarrel(regularBarrelPosition: p)
-        createRegularBarrel(regularBarrelPosition: p)
+        let k = CGPoint(x: frame.midX + 120, y: frame.midY + 90)
         createRegularBarrelStructure()
+        createKritter(kritterPosition: k)
+        self.run(self.gameSound)
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -231,7 +233,8 @@ class Game: SKScene, SKPhysicsContactDelegate {
         if nodesAtPoint.count > 0 {
             if nodesAtPoint.first?.name != "back" &&
                 nodesAtPoint.first?.name != "Points" &&
-                nodesAtPoint.first?.name != "Game Label"
+                nodesAtPoint.first?.name != "Game Label" &&
+                nodesAtPoint.first?.name != "floor"
                 { // don't move backdrop, points label, or game label
                 selectedNode = nodesAtPoint.first!
                 nodesAtPoint[0].physicsBody?.isDynamic = false
@@ -261,16 +264,29 @@ class Game: SKScene, SKPhysicsContactDelegate {
         if let characters = event.characters {
             print ("keyDown = \"\(characters)\", keycode = \(event.keyCode)")
             if characters == "a" {
-                hero.run(SKAction.moveBy(x: -10.0, y: 0.0, duration: 0.0))
+                hero.run(SKAction.moveBy(x: -40.0, y: 60.0, duration: 0.3))
                 hero.run(SKAction.scaleX(to: 1.0, duration: 0))
             }
             else if characters == "d" {
-                hero.run(SKAction.moveBy(x: 10.0, y: 0.0, duration: 0.0))
+                hero.run(SKAction.moveBy(x: 40.0, y: 60.0, duration: 0.3))
                 hero.run(SKAction.scaleX(to: -1.0, duration: 0))
             }
             else if characters == "w" {
-                hero.run(SKAction.moveBy(x: 0.0, y: 50.0, duration: 0.0))
+                hero.run(SKAction.moveBy(x: 0.0, y: 80.0, duration: 0.3))
             }
+            
+        }
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        guard let nodeA = contact.bodyA.node, let nodeB = contact.bodyB.node else {return}
+        guard let nameA = nodeA.name, let nameB = nodeB.name else {return}
+        
+        if nameA == "floor" && nameB == "Kritter"  {
+            nodeB.run(SKAction.removeFromParent())
+            
+            updatePoints()
+            
         }
     }
 }
