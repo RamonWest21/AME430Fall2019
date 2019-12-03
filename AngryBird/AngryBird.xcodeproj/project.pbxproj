@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F2DB8B0238C8C540065E587 /* DKThemeMidi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F2DB8AF238C8C540065E587 /* DKThemeMidi.wav */; };
+		3F5368582396E52600BC1B4F /* Outro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5368572396E52600BC1B4F /* Outro.swift */; };
 		3F5F5488238462AF00A1985D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F5487238462AF00A1985D /* AppDelegate.swift */; };
 		3F5F548A238462AF00A1985D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F5489238462AF00A1985D /* ViewController.swift */; };
 		3F5F548C238462B000A1985D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F548B238462B000A1985D /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		3F2DB8AF238C8C540065E587 /* DKThemeMidi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DKThemeMidi.wav; sourceTree = "<group>"; };
+		3F5368572396E52600BC1B4F /* Outro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outro.swift; sourceTree = "<group>"; };
 		3F5F5484238462AF00A1985D /* AngryBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F5487238462AF00A1985D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5F5489238462AF00A1985D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				3F5F5487238462AF00A1985D /* AppDelegate.swift */,
 				3F5F5489238462AF00A1985D /* ViewController.swift */,
 				3F5F54992384657F00A1985D /* Intro.swift */,
+				3F5368572396E52600BC1B4F /* Outro.swift */,
 				3F5F549B2384688700A1985D /* Game.swift */,
 				3F5F54972384647F00A1985D /* Notes.txt */,
 				3F5F548B238462B000A1985D /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5368582396E52600BC1B4F /* Outro.swift in Sources */,
 				3F5F548A238462AF00A1985D /* ViewController.swift in Sources */,
 				3F5F5488238462AF00A1985D /* AppDelegate.swift in Sources */,
 				3F5F549A2384657F00A1985D /* Intro.swift in Sources */,

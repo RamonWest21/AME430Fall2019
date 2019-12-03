@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AngryBird
 //
-//  Created by student on 11/19/19.
-//  Copyright © 2019 student. All rights reserved.
+//  Created by Ramon West on 11/19/19.
+//  Copyright © 2019 Ramon West. All rights reserved.
 //
 
 import Cocoa

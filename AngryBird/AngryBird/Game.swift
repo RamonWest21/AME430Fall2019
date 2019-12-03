@@ -2,8 +2,8 @@
 //  Game.swift
 //  AngryBird
 //
-//  Created by student on 11/19/19.
-//  Copyright © 2019 student. All rights reserved.
+//  Created by Ramon West on 11/19/19.
+//  Copyright © 2019 Ramon West. All rights reserved.
 //
 
 import Foundation
@@ -33,10 +33,11 @@ class Game: SKScene, SKPhysicsContactDelegate {
     }
     
     func updatePoints() {
-        points += 1
+        
         if let pointsNode = childNode(withName: "Points") as? SKLabelNode {
             pointsNode.text = "\(points)"
         }
+        print(points)
     }
     
     
@@ -170,7 +171,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
     }
     
     func createGround(){
-        let floor = SKSpriteNode(color: NSColor.clear, size: CGSize(width: frame.width, height: 260))
+        let floor = SKSpriteNode(color: NSColor.clear, size: CGSize(width: frame.width + 100, height: 260))
         floor.position = CGPoint(x: frame.midX, y: 96.0)
         floor.physicsBody = SKPhysicsBody(rectangleOf: floor.size)
         floor.physicsBody?.isDynamic = false
@@ -223,6 +224,9 @@ class Game: SKScene, SKPhysicsContactDelegate {
         createRegularBarrelStructure()
         createKritter(kritterPosition: k)
         self.run(self.gameSound)
+        print("Gravity: ")
+        print(self.physicsWorld.gravity)
+        self.physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -264,17 +268,29 @@ class Game: SKScene, SKPhysicsContactDelegate {
         if let characters = event.characters {
             print ("keyDown = \"\(characters)\", keycode = \(event.keyCode)")
             if characters == "a" {
-                hero.run(SKAction.moveBy(x: -40.0, y: 60.0, duration: 0.3))
+                hero.run(SKAction.moveBy(x: -20.0, y: 10.0, duration: 0.1))
                 hero.run(SKAction.scaleX(to: 1.0, duration: 0))
             }
             else if characters == "d" {
-                hero.run(SKAction.moveBy(x: 40.0, y: 60.0, duration: 0.3))
+                hero.run(SKAction.moveBy(x: 20.0, y: 10.0, duration: 0.1))
                 hero.run(SKAction.scaleX(to: -1.0, duration: 0))
             }
             else if characters == "w" {
-                hero.run(SKAction.moveBy(x: 0.0, y: 80.0, duration: 0.3))
+                hero.run(SKAction.moveBy(x: 0.0, y: 160.0, duration: 0.2))
             }
             
+        }
+    }
+    
+    override func keyUp(with event: NSEvent) {
+        if let characters = event.characters {
+            print ("keyDown = \"\(characters)\", keycode = \(event.keyCode)")
+            if characters == "a" ||
+                characters == "w" ||
+                characters == "d" {
+                points += 1
+                updatePoints()
+            }
         }
     }
     
@@ -283,10 +299,15 @@ class Game: SKScene, SKPhysicsContactDelegate {
         guard let nameA = nodeA.name, let nameB = nodeB.name else {return}
         
         if nameA == "floor" && nameB == "Kritter"  {
-            nodeB.run(SKAction.removeFromParent())
             
-            updatePoints()
+            if let view = view {
+                let out = Outro(size: size)
+                let transition = SKTransition.flipHorizontal(withDuration: 0.5)
+                view.presentScene(out, transition: transition)
+            }
             
         }
     }
+    
+    
 }
