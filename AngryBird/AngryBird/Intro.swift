@@ -8,9 +8,11 @@
 
 import Foundation
 import SpriteKit
+import AVFoundation
 
 class Intro: SKScene {
     var message = "Angry Bird"
+    let gameSound = SKAction.playSoundFileNamed("DKThemeMidi.wav", waitForCompletion: false)
     
     override func didMove(to view: SKView){
         backgroundColor = SKColor.green
@@ -34,6 +36,17 @@ class Intro: SKScene {
         instructions.position = CGPoint(x: size.width / 2.0, y: size.height / 2.0 - 150)
         instructions.name = "Instructions Label"
         addChild(instructions)
+        
+        let instructions2 = SKLabelNode(fontNamed: "Futura")
+        instructions2.text = "Jump with 'W'"
+        instructions2.fontSize = 48
+        instructions2.position = CGPoint(x: size.width / 2.0, y: size.height / 2.0 - 200)
+        instructions2.name = "Instructions Label2"
+        addChild(instructions2)
+        
+        
+        self.run(self.gameSound)
+    
         
     }
     

@@ -19,7 +19,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
     var kritter: SKNode?
     var cannonBarrel: SKNode?
     var regularBarrels: [SKNode]?
-    let gameSound = SKAction.playSoundFileNamed("DKThemeMidi.wav", waitForCompletion: false)
+    
     var points = 0 {
         didSet {
             //updatePoints()
@@ -160,8 +160,9 @@ class Game: SKScene, SKPhysicsContactDelegate {
         body.isDynamic = true
         body.usesPreciseCollisionDetection = true
         body.collisionBitMask = 0x00000001
+        body.contactTestBitMask = 0x00000001
         villain.physicsBody = body
-        
+        villain.physicsBody?.isDynamic = true
         let xRange = SKRange(lowerLimit: 0.0, upperLimit: frame.width)
         let xConstraint = SKConstraint.positionX(xRange)
         villain.constraints = [xConstraint]
@@ -174,6 +175,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
         let floor = SKSpriteNode(color: NSColor.clear, size: CGSize(width: frame.width + 100, height: 260))
         floor.position = CGPoint(x: frame.midX, y: 96.0)
         floor.physicsBody = SKPhysicsBody(rectangleOf: floor.size)
+        floor.physicsBody?.usesPreciseCollisionDetection = true
         floor.physicsBody?.isDynamic = false
         floor.name = "floor"
         addChild(floor)
@@ -223,7 +225,7 @@ class Game: SKScene, SKPhysicsContactDelegate {
         let k = CGPoint(x: frame.midX + 120, y: frame.midY + 90)
         createRegularBarrelStructure()
         createKritter(kritterPosition: k)
-        self.run(self.gameSound)
+        
         print("Gravity: ")
         print(self.physicsWorld.gravity)
         self.physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
@@ -300,11 +302,21 @@ class Game: SKScene, SKPhysicsContactDelegate {
         
         if nameA == "floor" && nameB == "Kritter"  {
             
-            if let view = view {
+            //if let view = view {
                 let out = Outro(size: size)
                 let transition = SKTransition.flipHorizontal(withDuration: 0.5)
-                view.presentScene(out, transition: transition)
-            }
+                view?.presentScene(out, transition: transition)
+           // }
+            
+        }
+        
+        else if nameA == "Kritter" && nameB == "floor"  {
+            
+          // if let view = view {
+                let out = Outro(size: size)
+                let transition = SKTransition.flipHorizontal(withDuration: 0.5)
+                view?.presentScene(out, transition: transition)
+            //}
             
         }
     }
